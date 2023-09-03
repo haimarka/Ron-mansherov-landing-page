@@ -268,9 +268,6 @@ img{
     margin-bottom: var(--mb-3);
 }
 
-.opening-btn{
-    margin-left: 20%;
-}
 
 .button{
     display: inline-block;
@@ -322,8 +319,8 @@ img{
     width: 70%;
 }
 
-#share{
-    margin-left: 45%;
+.share_container{
+    margin-left: 40%;
     
 }
 
@@ -523,7 +520,15 @@ img{
 
 
 .home_data{
-    width: 40vw;
+    width: 100%;
+}
+
+#contact{
+    width: 60%;
+}
+
+#send_container{
+    margin-left: 55%;
 }
 
 .send_container_first{
@@ -647,6 +652,12 @@ img{
     margin-left: 37%;
 }
 
+.home_titlehome_title{
+    font-size: 240%;
+}
+
+
+
 @media screen and (max-width: 425px){
     .home_img,
     .share_img,
@@ -684,6 +695,11 @@ img{
 
     .second-content-send{
         width: 100%;
+        margin-left: -170%;
+    }
+
+    #contact{
+        margin-left: 20%;
     }
 
     .second-form{
@@ -842,9 +858,19 @@ img{
         border-radius: 1.5rem;
     }
 
-    .second-form{
+    .send_container{
         margin-left: 30%;
+        width: 45%;
     }
+
+    .send_title_form{
+        width: 100%;
+    }
+
+    .form_description{
+        width: 100%;
+    }
+
 
     .second-content-send{
         width: 100%;
