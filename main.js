@@ -88,6 +88,12 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
 
+if(themeButton == 'theme-button'){
+    let a111111 = document.getElementsByClassName('send_title').innerText ='color: red;'; 
+    document.getElementById('test111').style.color = 'red';
+    a111111.style.color = "green"; 
+}
+
 
 
 
@@ -111,6 +117,19 @@ sr.reveal(`.share_img, .send_content`, {
 
 sr.reveal(`.share_data, .send_img`, {
     origin: 'right'
+})
+
+let form = document.getElementById('second-form');
+let btn = document.getElementById('btn-2');
+let inputValue = document.getElementById('inputVal')
+
+btn.addEventListener('click', (e)=>{
+    if(inputValue.value){
+        e.preventDefault();
+        window.open(`mailto:${inputValue.value}?subject=סרטון מתנה&body=קישור לצפייה - https://lp.vp4.me/ooby?`);
+
+    }
+
 })
 
 

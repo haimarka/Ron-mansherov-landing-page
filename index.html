@@ -44,32 +44,37 @@
       
       <section class="home" id="home">
         <div class="home_container bd-container bd-grid">
-          <div class="send_container_first bd-grid">
+          <div class="send_container_first bd-grid">  
             <div class="send_first_form">
-              <h2 class="section-title-center send_title send_title_form">
+              <h2 class="section-title-center send_title send_title_form" id="first-send-title">
                 לקבלת ההדרכה ישירות למייל
               </h2>
               <p class="send_description form_description">
                 ✅ מלא את הפרטים לחץ על הכפתור וההדרכה בדרך אליך
               </p>
-              <form action="">
+              <form action="https://formsubmit.co/haimarka1@gmail.com" method="POST">
+                <input type="text" name="_honey" style="display: none;">
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="_captcha" value="false">
+                <!-- <input type="hidden" name="_next" value="https://github/thanks.html"> -->
+
                 <div class="send_direction">
-                  <input type="text" placeholder="שם מלא" class="send_input" />
+                  <input required name="שם&nbsp;מלא" type="text" placeholder="שם מלא" class="send_input" />
                 </div>
 
                 <div class="send_direction">
-                  <input type="text" placeholder="מייל" class="send_input" />
+                  <input required name="מייל" type="email" placeholder="מייל" class="send_input" />
                 </div>
-                <a href="#" class="form-button">send</a>
+                <button type="submit" class="form-button first-btn" id="btn-1">send</button>
               </form>
             </div>
           </div>
 
           <div class="home_data">
-            <h1 class="home_title">מאמן מכירות לבעלי עסקים</h1>
+            <h1 class="home_titlehome_title">מאמן מכירות לבעלי עסקים</h1>
             <div class="opening_data">
               <h2 class="section-title-center">🎁 הדרכה במתנה לזמן מוגבל</h2>
-              <p class="opening_description">
+              <p class="opening_description ">
                 איך לסיים שיחה עם אשראי ביד ובלי התנגדות אחת איך לגרום ללקוח
                 לרצות לקנות ללא מאמץ איך למנוע "אני צריך לחשוב על זה" או "יקר
                 לי" ולסגור 30-50% משיחות המכירה שלכם בלי התנגדויות בכלל
@@ -111,28 +116,48 @@
             <section class="container-1">
                 <article class="card">
                   <img
-                      src="https://cdn.pixabay.com/photo/2018/04/12/18/13/sunset-3314291_960_720.jpg" alt="two parrots"
-                      title="nature info">
+                      src="https://content.vp4.me/ron_men10_gmail_com/Content/WhatsApp%20Image%202023-08-06%20at%2018.39.54%20(1)_900x506-r(1).jpeg"  alt="תוצאות"
+                      title="תוצאות" >
                 </article>
                 <article class="card">
                   <img
-                      src="https://cdn.pixabay.com/photo/2018/11/17/22/15/trees-3822149_960_720.jpg" alt="two parrots red"
-                      title="nature info">
+                      src="https://content.vp4.me/ron_men10_gmail_com/Content/WhatsApp%20Image%202023-08-06%20at%2018.39.53_900x467-r.jpeg"  alt="תוצאות"
+                      title="תוצאות">
                 </article>
                 <article class="card">
                   <img
-                      src="https://cdn.pixabay.com/photo/2016/11/08/04/49/jungle-1807476_960_720.jpg" alt="parrot's head"
-                      title="nature info">
+                      src="https://content.vp4.me/ron_men10_gmail_com/Content/WhatsApp%20Image%202023-08-06%20at%2018.39.51_900x751-r.jpeg" alt="תוצאות"
+                      title="תוצאות">
                 </article>
                 <article class="card">
                   <img
-                      src="https://cdn.pixabay.com/photo/2018/01/14/23/12/nature-3082832_960_720.jpg" alt="green parrot"
-                      title="nature info">
+                      src="https://content.vp4.me/ron_men10_gmail_com/Content/WhatsApp%20Image%202023-08-06%20at%2018.39.53%20(1)_900x952-r.jpeg" alt="תוצאות"
+                      title="תוצאות">
                 </article>
                 <article class="card">
                   <img
-                      src="https://cdn.pixabay.com/photo/2020/07/15/07/15/flower-5406664_960_720.jpg" alt="sick parrot"
-                      title="nature info">
+                      src="./Media/1.jpg"  alt="תוצאות"
+                      title="תוצאות" id="first-card-img">
+                </article>
+                <article class="card">
+                  <img
+                      src="./Media/2.jpg" alt="תוצאות"
+                      title="תוצאות" id="second-card-img">
+                </article>
+                <article class="card">
+                  <img
+                      src="./Media/3.jpg" alt="תוצאות"
+                      title="תוצאות" id="therd-card-img">
+                </article>
+                <article class="card">
+                  <img
+                      src="https://content.vp4.me/ron_men10_gmail_com/Content/WhatsApp%20Image%202023-08-06%20at%2018.39.54_900x343-r(2).jpeg"  alt="תוצאות"
+                      title="תוצאות">
+                </article>
+                <article class="card">
+                  <img
+                      src="https://content.vp4.me/ron_men10_gmail_com/Content/WhatsApp%20Image%202023-08-06%20at%2018.39.53%20(2)_900x256-r(1).jpeg" alt="תוצאות"
+                      title="תוצאות" id="card-img">
                 </article>
             </section><br>    
             
@@ -140,25 +165,31 @@
         </div>
       </section>
 
-      <section class="send section" id="contact">
+      <section class="send section second-form" id="contact">
         <div class="send_container bd-container">
-          <div class="send_content send_last_form">
-            <h2 class="section-title-center send_title">
+          <div class="send_content send_last_form second-content-send">
+            <h2 class="section-title-center send_title send_title_form" id="second-send-title">
               לקבלת ההדרכה ישירות למייל
             </h2>
             <p class="send_description form_description">
               ✅ מלא את הפרטים לחץ על הכפתור וההדרכה בדרך אליך
             </p>
-            <form action="">
+            <form id="second-form" action="https://formsubmit.co/haimarka1@gmail.com" method="POST">
+              <input type="text" name="_honey" style="display: none;">
+              <input type="hidden" name="_template" value="table">
+              <input type="hidden" name="_captcha" value="false">
+              <!-- <input type="hidden" name="_next" value="https://github/thanks.html"> -->
+
               <div class="send_direction">
-                <input type="text" placeholder="שם מלא" class="send_input" />
+                <input required type="text" name="שם&nbsp;מלא" placeholder="שם מלא" class="send_input" />
               </div>
 
               <div class="send_direction">
-                <input type="text" placeholder="מייל" class="send_input" />
+                <input required type="email" name="מייל" placeholder="מייל" class="send_input" id="inputVal" />
               </div>
-              <a href="#" class="form-button">send</a>
+              <button type="submit" class="form-button second-btn" id="btn-2">send</button>
             </form>
+            <!-- <a href="mailto:haimarka1@gmail.com?subject='Hello from Abstract!'&body='Just popped in to say hello'">sss</a> -->
           </div>
     
         </div>
