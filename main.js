@@ -119,18 +119,39 @@ sr.reveal(`.share_data, .send_img`, {
     origin: 'right'
 })
 
-let form = document.getElementById('second-form');
-let btn = document.getElementById('btn-2');
-let inputValue = document.getElementById('inputVal')
 
-btn.addEventListener('click', (e)=>{
-    if(inputValue.value){
+// free gift first form
+let form1 = document.getElementById('first-form');
+let btn1 = document.getElementById('btn-1');
+let inputValue1 = document.getElementById('inputVal-first');
+
+    btn1.addEventListener('mousedown', (e)=>{
+            if(inputValue1.value){
+                e.preventDefault();
+                // form1.action = '"https://formsubmit.co/haimarka1@gmail.com" method="POST"'
+                window.open(`mailto:${inputValue1.value}?subject=סרטון מתנה&body=קישור לצפייה - https://lp.vp4.me/ooby?`);
+            }
+        
+    });
+
+
+
+
+// free gift second form
+let form2 = document.getElementById('second-form');
+let btn2 = document.getElementById('btn-2');
+let inputValue2 = document.getElementById('inputVal-second');
+
+
+btn2.addEventListener('mousedown', (e)=>{
+    if(inputValue2.value){
         e.preventDefault();
-        window.open(`mailto:${inputValue.value}?subject=סרטון מתנה&body=קישור לצפייה - https://lp.vp4.me/ooby?`);
+        window.open(`mailto:${inputValue2.value}?subject=סרטון מתנה&body=קישור לצפייה - https://lp.vp4.me/ooby?`);
 
     }
 
 })
+
 
 
 
