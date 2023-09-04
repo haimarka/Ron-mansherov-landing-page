@@ -396,7 +396,7 @@ img{
     width: 100%;
     height: 70vh;
     overflow: hidden;
-}
+}*
 
 .card {
     width: 100%;
@@ -407,26 +407,24 @@ img{
     
 }
 
-
-
 .card img {
     width: 100%;
     height: 90vh;
-    
 }
 
 #first-card-img{
-    width: 60vw;
+    width: 40vw;
 }
 
 #second-card-img{
-    width: 60vw;
+    width: 40vw;
 }
 
 #therd-card-img{
-    width: 60vw;
-
+    width: 40vw;
 }
+
+
 
 /* #four-card-img{
     width: 100vw;
@@ -670,6 +668,7 @@ img{
 
 
 
+
 @media screen and (max-width: 425px){
     .home_img,
     .share_img,
@@ -809,7 +808,7 @@ img{
     }
 
     #seven-card-img{
-        width: 100%;
+        width: 100vw;
         height: 70%;
         margin-top: 15%;
 
@@ -985,6 +984,8 @@ img{
     .share_data{
         margin-left: -15%;
     }
+
+    
 }
 
 

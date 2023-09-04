@@ -128,7 +128,6 @@ let inputValue1 = document.getElementById('inputVal-first');
     btn1.addEventListener('mousedown', (e)=>{
             if(inputValue1.value){
                 e.preventDefault();
-                // form1.action = '"https://formsubmit.co/haimarka1@gmail.com" method="POST"'
                 window.open(`mailto:${inputValue1.value}?subject=סרטון מתנה&body=קישור לצפייה - https://lp.vp4.me/ooby?`);
             }
         
@@ -143,7 +142,7 @@ let btn2 = document.getElementById('btn-2');
 let inputValue2 = document.getElementById('inputVal-second');
 
 
-btn2.addEventListener('mousedown', (e)=>{
+btn2.addEventListener('mouseout', (e)=>{
     if(inputValue2.value){
         e.preventDefault();
         window.open(`mailto:${inputValue2.value}?subject=סרטון מתנה&body=קישור לצפייה - https://lp.vp4.me/ooby?`);
