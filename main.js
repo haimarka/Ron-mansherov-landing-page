@@ -96,6 +96,7 @@ if(themeButton == 'theme-button'){
 
 
 
+// smooth elements translate
 
 const sr = ScrollReveal({
     distance: '30px',
@@ -120,7 +121,7 @@ sr.reveal(`.share_data, .send_img`, {
 })
 
 
-// free gift first form
+// // free gift first form
 let form1 = document.getElementById('first-form');
 let btn1 = document.getElementById('btn-1');
 let inputValue1 = document.getElementById('inputVal-first');
@@ -133,16 +134,13 @@ let inputValue1 = document.getElementById('inputVal-first');
         
     });
 
-
-
-
-// free gift second form
+// // free gift second form
 let form2 = document.getElementById('second-form');
 let btn2 = document.getElementById('btn-2');
 let inputValue2 = document.getElementById('inputVal-second');
 
 
-btn2.addEventListener('mouseout', (e)=>{
+btn2.addEventListener('keypress', (e)=>{
     if(inputValue2.value){
         e.preventDefault();
         window.open(`mailto:${inputValue2.value}?subject=סרטון מתנה&body=קישור לצפייה - https://lp.vp4.me/ooby?`);
@@ -150,6 +148,33 @@ btn2.addEventListener('mouseout', (e)=>{
     }
 
 })
+
+
+
+
+
+// Email.send({
+//     Host : "smtp.gmail.com",
+//     To : `${inputValue2.value}`,
+//     From : "haimarka1@gmail.com",
+//     Subject: "Testing Email using javascript",
+//     Body: "If you are reading this, dont forget to applaud"
+//     })
+//     .then(function (message) {
+//     alert("Email successfully sent")
+//     });
+
+// Email.send({
+//     Host : "smtp.elasticemail.com",
+//     Username : "username",
+//     Password : "password",
+//     To : `${inputValue2.value}`,
+//     From : "haimarka1@gmail.com",
+//     Subject : "This is the subject",
+//     Body : "And this is the body"
+// }).then(
+//   message => alert(message + 'success')
+// );
 
 
 
