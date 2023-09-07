@@ -540,7 +540,7 @@ img{
 }
 
 #send_container{
-    margin-left: 55%;
+    margin-left: 60%;
 }
 
 .send_container_first{
@@ -683,6 +683,11 @@ img{
     font-size: 240%;
 }
 
+/* .second-content-send{
+    margin-left: 30%;
+} */
+
+
 
 
 
@@ -701,7 +706,7 @@ img{
     .send_container_first,
     .send_first_form{
         width: 95%;
-        margin-left: 2**%;
+        margin-left: 2%;
     }
 
     #first-send-title{
